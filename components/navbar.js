@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Logo from "../public/ML_logo.png";
 
-function Navbar() {
+function navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		// <div>
@@ -209,4 +209,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar;
+export default navbar;

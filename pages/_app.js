@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import axios from 'axios'
 axios.defaults.baseURL = 'http://127.0.0.1:8000/';
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
