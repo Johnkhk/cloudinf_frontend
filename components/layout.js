@@ -1,15 +1,15 @@
-import navbar from './navbar'
-import footer from './footer'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
   return (
     <>
-      <navbar />
+      <Navbar />
       {/* <Navbar class="sticky top-0 z-50"/> */}
       <main>{children}</main>
       {/* <main class="relative">{children}</main> */}
 
-      <footer />
+      <Footer />
     </>
   )
 }
