@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-axios.defaults.baseURL = 'http://127.0.0.1:8000/';
+// axios.defaults.baseURL = 'http://127.0.0.1:8000/';
+// axios.defaults.baseURL = 'django-env38.eba-bqym8ypp.us-west-2.elasticbeanstalk.com/';
+axios.defaults.baseURL = 'http://cloudinf11-nc-env.eba-syys7q3t.us-west-1.elasticbeanstalk.com/';
+
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
 axios.defaults.xsrfCookieName = "csrftoken";
 // axios.defaults.withCredentials = true
@@ -14,6 +17,7 @@ const Summarizer = () => {
     // const sendRequest = useCallback(async () => {
     const sendRequest = () => {
         console.log("sending req")
+        // console.log(axios.defaults.baseURL)
         // don't send again while we are sending
         if (isSending) return
         // update state
@@ -21,6 +25,7 @@ const Summarizer = () => {
         // send the actual request
         // await API.sendRequest()
         // axios.post('/api/summarizer', {content: "LMFAO", requested_at: Date.now() },{withCredentials: true})
+        console.log({content: context, requested_at: Date.now() })
         axios.post('/api/summarizer', {content: context, requested_at: Date.now() })
 
         .then(response =>{
