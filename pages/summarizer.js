@@ -3,7 +3,7 @@ import axios from 'axios';
 // axios.defaults.baseURL = 'http://127.0.0.1:8000/';
 // axios.defaults.baseURL = 'django-env38.eba-bqym8ypp.us-west-2.elasticbeanstalk.com/';
 // axios.defaults.baseURL = 'http://cloudinf11-nc-env.eba-syys7q3t.us-west-1.elasticbeanstalk.com/';
-axios.defaults.baseURL = 'api.cloudinference.org/';
+axios.defaults.baseURL = 'https://api.cloudinference.org/';
 
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
 axios.defaults.xsrfCookieName = "csrftoken";
