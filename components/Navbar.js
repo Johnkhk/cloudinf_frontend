@@ -33,43 +33,19 @@ function Navbar() {
 										Summarizer
 									</Link>
 									<Link
-										activeClass="about"
-                                        href="/summarizer"
-										to="about"
+										activeClass="Summarizer"
+                                        href="/workinprogress"
+										to="summarizer"
 										smooth={true}
 										offset={50}
 										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
 									>
-										About
+										Movie-Reccomender
 									</Link>
-									<Link
-										activeClass="work"
-                                        href="/summarizer"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-									>
-										Projects
-									</Link>
-
-									<Link
-										activeClass="Services"
-                                        href="/summarizer"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-									>
-										Services
-									</Link>
-
 									<Link
 										activeClass="contact"
-                                        href="/summarizer"
+                                        href="https://johnkhk.github.io/portfolio"
 										to="contact"
 										smooth={true}
 										offset={50}

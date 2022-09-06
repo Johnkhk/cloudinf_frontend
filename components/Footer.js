@@ -14,9 +14,13 @@ function Footer() {
 							Cloud<span className="text-blue-600">Inference</span>
 						</p>
 						<div className="flex gap-6 pb-5">
-							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaGithub className="text-2xl cursor-pointer hover:text-red-600" />
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
+							<a href="https://www.linkedin.com/in/johnkhho/">
+								<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600"/>
+							</a>
+							<a href="https://github.com/Johnkhk">
+								<FaGithub className="text-2xl cursor-pointer hover:text-red-600" />
+							</a>
+							{/* <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" /> */}
 						</div>
 					</ul>
 				</div>
